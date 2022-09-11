@@ -1,0 +1,72 @@
+/*
+	SYNTAX: ;
+		selector{
+			property:  value;
+		}
+
+		selectors: ;
+		is selector #IDname
+
+
+		universal selector - * --> targets all elements(least prioritized selector in case there is conflict with the codes)
+*/
+*{
+	font-family: "Roboto"; sans-serif;
+}
+
+h1,h2{
+ font-family: "Montserrat"; sans-serif;
+ }
+
+ img{
+ 	height: 250px;
+ 	width: 250px;
+ 	border: 5px solid rosybrown;
+ 	border-radius: 100%;
+ }
+
+ #landing{
+ 	/*vh - viewpoint height depends on the height of the user monitor/screen*/
+ 	height: 100vh;
+ 	/*display:  flex - allows us to alighn the elements horizontally and vertically;*/
+ 	display: flex;
+ 	/*aligns the flex items into column/vertically*/
+ 	flex-direction: column;
+ 	/*aligns the flex items horizontally*/
+ 	align-items: center;
+ 	/*aligns the flex items vertically*/
+ 	justify-content: center;
+ 	padding: 0;
+ }
+
+ #gallery{
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	justify-content: center;
+ 	height: 90vh;
+ 	border-radius: 6px;
+ 	color: #755e4a;
+ }
+
+ ul{
+ 	list-style: none;
+ 	padding: 0;
+ }
+
+html{
+	scroll-behavior: smooth;
+}
+
+ h2{
+ 	color: #683B2B;
+ }
+
+ .tools{
+ 	border:  5px solid #c3a6a0;
+ 	height: 200px;
+ 	/*% depends on the width of the parent element*/
+ 	width: 75%;
+ 	margin: 20px;
+ 	padding: 25px;
+ }
